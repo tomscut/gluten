@@ -29,10 +29,10 @@ This class extends Spark's `MemoryConsumer` and provides the bridge between nati
 
 Key files:
 - `ReservationListener.java` - Interface for memory reservation callbacks
-- `ManagedReservationListener.java` - Implements dynamic memory reservation/unreservation with Spark integration
-  - `reserve(long size)` - Dynamically reserves memory from Spark
-  - `unreserve(long size)` - Releases reserved memory back to Spark
-  - `reserveOrThrow(long size)` - Reserves memory or throws exception if insufficient
+- `ManagedReservationListener.java` - Implements the `ReservationListener` interface to provide dynamic memory reservation/unreservation with Spark integration
+  - Implements `reserve(long size)` - Dynamically reserves memory from Spark
+  - Implements `unreserve(long size)` - Releases reserved memory back to Spark
+  - Implements `reserveOrThrow(long size)` - Reserves memory or throws exception if insufficient
 
 #### Native Memory Allocators
 **Location:** `gluten-data/src/main/java/io/glutenproject/memory/alloc/`

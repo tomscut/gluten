@@ -29,10 +29,10 @@ Gluten 的动态内存调整逻辑分布在多个层次：
 
 关键文件：
 - `ReservationListener.java` - 内存预留回调接口
-- `ManagedReservationListener.java` - 实现与 Spark 集成的动态内存预留/释放
-  - `reserve(long size)` - 动态地从 Spark 预留内存
-  - `unreserve(long size)` - 将预留的内存释放回 Spark
-  - `reserveOrThrow(long size)` - 预留内存或在内存不足时抛出异常
+- `ManagedReservationListener.java` - 实现 `ReservationListener` 接口，提供与 Spark 集成的动态内存预留/释放
+  - 实现 `reserve(long size)` - 动态地从 Spark 预留内存
+  - 实现 `unreserve(long size)` - 将预留的内存释放回 Spark
+  - 实现 `reserveOrThrow(long size)` - 预留内存或在内存不足时抛出异常
 
 #### 原生内存分配器
 **位置:** `gluten-data/src/main/java/io/glutenproject/memory/alloc/`
