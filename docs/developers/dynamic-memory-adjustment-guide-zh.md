@@ -1,3 +1,9 @@
+---
+layout: page
+title: 动态内存调整指南 (Dynamic Memory Adjustment Guide)
+nav_order: 6
+parent: Developer Overview
+---
 # Gluten 动态内存调整逻辑
 
 ## 概述

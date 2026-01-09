@@ -1,3 +1,9 @@
+---
+layout: page
+title: Dynamic Memory Adjustment Guide
+nav_order: 5
+parent: Developer Overview
+---
 # Dynamic Memory Adjustment Logic in Gluten
 
 ## Overview
